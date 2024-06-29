@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spinner Wheel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="spinner-container">
+      <div class="spinner-wheel-container">
+        <canvas id="spinner-wheel"></canvas>
+        <div class="spinner-indicator"></div>
+      </div>
+      <button class="spinner-btn" id="spinner-btn">Spin it!</button>
+    </div>
+    <div class="names-input-container">
+      <h2>Add names</h2>
+      <div class="text-box">
+        <textarea
+          name="names"
+          id="names-input-box"
+          cols="30"
+          rows="10"
+          placeholder="Add new names and press the button below..."
+        ></textarea>
+      </div>
+      <button class="names-add-btn" id="names-add-btn">Add Names</button>
+      <div class="spinner-result" id="spinner-result"></div>
+      <button id="spinner-close" class="spinner-close-btn">X</button>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"
+    ></script>
+    <script src="https://unpkg.com/chart.js-plugin-labels-dv/dist/chartjs-plugin-labels.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
